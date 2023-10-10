@@ -1,0 +1,51 @@
+* {
+    color: white;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+    font-size: 3vw;
+    min-height: none;
+}
+
+main input {
+    color: black;
+    outline: none;
+    width: 35vw;
+    height: 3vw;
+    font-size: 2vw;
+    overflow: hidden;
+    margin: 1vw auto;
+    text-align: center;
+}
+
+main h2 {
+ padding-bottom: 2vw;
+}
+
+form {
+    margin: 2vw auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+main button {
+    color: black;
+    width: 10vw;
+    height: 3vw;
+    font-size: 2vw;
+    border: none;
+    margin-top: 1vw;
+    transition: 200ms;
+}
+
+main button:hover {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    transition: 200ms;
+}
+
