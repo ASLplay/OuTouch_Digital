@@ -15,3 +15,7 @@ footer {
     text-align: end;
     margin-right: 2vw;
 }
+
+a {
+    text-decoration: none;
+}

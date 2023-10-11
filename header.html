@@ -7,9 +7,42 @@
     <input placeholder=" Поиск" type="search">
 
     <div class="button_header">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Категории</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="./#popular">Популярное</a>
+                <a href="./#merch">Мерч</a>
+                <a href="./#electric">Электроника</a>
+                <a href="./#boxPC">Корпуса</a>
+                <a href="./#another">Доп. услуги</a>
+            </div>
+        </div>
         <a href="#">Избранное</a>
         <a href="#">Корзина</a>
         <a href="login.html">Профиль</a>
     </div>
 
+    <script>
+        // Кнопка выпада
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
 </header>
+<a href="#" class="up">Вверх</a>

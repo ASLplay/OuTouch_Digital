@@ -6,6 +6,9 @@ header {
     justify-content: space-between;
     background-color: rgb(29, 29, 29);
     font-size: 1vw;
+    z-index: 998;
+    top: 0;
+    position: fixed;
 }
 
 header a {
@@ -30,3 +33,61 @@ header input {
 header a:hover {
     color: rgb(192, 192, 192);
 }
+
+.up {
+    position: fixed;
+    font-size: 1vw;
+    margin: -2vw 0.7vw;
+    padding: 0.3vw 0.3vw;
+    height: 85vh;
+    color: white;
+    padding-top: 80vh;
+}
+
+.up:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover{
+    color: grey;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: grey}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

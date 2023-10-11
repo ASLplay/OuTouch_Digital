@@ -1,3 +1,4 @@
+/* Стили */
 @font-face {
     font-family: 'Comfortaa';
     src: url('../fonts/COMFORTAA.TTF');
@@ -13,6 +14,11 @@ body {
     background-color: rgb(44, 44, 44);
 }
 
+hr {
+    background-color: white;
+    color: white;
+}
+
 main {
     width: 90%;
     min-height: min-content;
@@ -21,5 +27,49 @@ main {
     background-color: rgb(29, 29, 29);
     flex-direction: column;
     padding-bottom: 5vw;
-    margin-top: 2vw;
+    margin-top: 6vw;
+}
+
+/* Категории */
+.info {
+    color: white;
+    font-size: 4vw;
+    margin-left: 4vw;
+    margin-top: 4vw;
+}
+
+/* Блоки с товарами */
+.blocks {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    cursor: pointer;
+    text-decoration: none;
+color: white;
+margin: 2vw auto;
+}
+
+.block a:hover {
+    color: grey;
+}
+
+.block img {
+    width: 20vw;
+    height: 20vw;
+    padding: 0.2vw;
+    border: 0.2vw solid rgb(255, 255, 255);
+border-radius: 0.5vw;
+margin-bottom: 1vw;
+object-fit: cover;
+}
+
+.block img:hover {
+    border: 0.2vw solid grey;
 }
