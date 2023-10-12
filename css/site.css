@@ -27,7 +27,7 @@ main {
     background-color: rgb(29, 29, 29);
     flex-direction: column;
     padding-bottom: 5vw;
-    margin-top: 6vw;
+    margin-top: 80px;
 }
 
 /* Категории */
@@ -72,4 +72,20 @@ object-fit: cover;
 
 .block img:hover {
     border: 0.2vw solid grey;
+}
+
+@media (max-width:1080px) {
+
+    main {
+        margin-top: 70px;
+    }
+
+}
+
+@media (max-width:620px) {
+
+    main {
+        margin-top: 60px;
+    }
+
 }

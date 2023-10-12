@@ -1,11 +1,10 @@
 header {
     width: 100%;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(29, 29, 29);
-    font-size: 1vw;
     z-index: 998;
     top: 0;
     position: fixed;
@@ -27,7 +26,6 @@ header input {
     border-radius: 0.2vw;
     outline: none;
     color: white;
-    font-size: 0.8vw;
 }
 
 header a:hover {
@@ -35,59 +33,87 @@ header a:hover {
 }
 
 .up {
+    opacity: 0;
     position: fixed;
     font-size: 1vw;
     margin: -2vw 0.7vw;
     padding: 0.3vw 0.3vw;
-    height: 85vh;
+    height: 100%;
     color: white;
-    padding-top: 80vh;
+    transition: 300ms;
 }
 
 .up:hover {
-    background-color: rgb(59, 59, 59);
+    opacity: 1;
+    transition: 300ms;
 }
 
-/* Dropdown Button */
 .dropbtn {
     background-color: rgb(29, 29, 29);
     color: white;
-    font-size: 1vw;
     border: none;
     cursor: pointer;
     margin-right: 1vw;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover{
+.dropbtn:hover {
     color: grey;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(44, 44, 44);
     min-width: max-content;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 999;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {color: grey}
+.dropdown-content a:hover {
+    color: grey
+}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+    display: block;
+}
+
+.menu_mini_screen {
+    display: none;
+}
+
+@media (max-width:1080px) {
+    .menu_big_screen {
+        display: none;
+    }
+
+    .menu_mini_screen {
+        display: block;
+        margin-right: 10vw;
+    }
+}
+
+@media (max-width:620px) {
+    .menu_big_screen {
+        display: none;
+    }
+
+    .menu_mini_screen {
+        display: block;
+        margin-right: 13vw;
+    }
+
+    header input {
+        width: 30%;
+    }
+}
