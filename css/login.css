@@ -49,3 +49,11 @@ main button:hover {
     transition: 200ms;
 }
 
+main a {
+    margin: 0 auto;
+}
+
+main a:hover {
+color: grey;
+}
+
