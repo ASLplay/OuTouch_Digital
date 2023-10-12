@@ -92,7 +92,7 @@ header a:hover {
     display: none;
 }
 
-@media (max-width:1080px) {
+@media (min-width:1080px) {
     .menu_big_screen {
         display: none;
     }
@@ -103,7 +103,7 @@ header a:hover {
     }
 }
 
-@media (max-width:620px) {
+@media (min-width:620px) {
     .menu_big_screen {
         display: none;
     }
